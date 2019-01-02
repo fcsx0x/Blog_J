@@ -60,12 +60,8 @@ public class iOSRequestReviewScene : MonoBehaviour
 
 저같은 경우에는 Linker Error 가 발생했습니다.
 
->Showing Recent Issues
-  "_OBJC_CLASS_$_SKStoreReviewController", referenced from:
-  objc-class-ref in iOSReviewRequest.o
-  ld: symbol(s) not found for architecture arm64
-  clang: error: linker command failed with exit code 1 (use -v to see invocation)
- > 
+>Showing Recent Issues "_OBJC_CLASS_$_SKStoreReviewController", referenced from: objc-class-ref in iOSReviewRequest.old: symbol(s) not found for architecture arm64 clang: error: linker command failed with exit code 1 (use -v to see invocation)
+> 
 #문제해결
 Build Phases -> Link Binary With Libraries 에 StoreKit.framework 가 없어서 추가한 뒤 빌드하면 문제없이 빌드가 되었습니다.
 
