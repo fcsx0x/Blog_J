@@ -16,7 +16,7 @@ void requestReview()
 }
 
 ### iOSRequestReview.cs
-```css
+```ruby
 using System.Collection;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,6 +35,7 @@ public class iOSRequestReview
 ```
 
 ### iOSRequestReviewScene.cs
+```ruby
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -54,7 +55,7 @@ public class iOSRequestReviewScene : MonoBehaviour
     iOSReviewRequest.Request();
   }
 }
-
+```
 빌드 후 xcodeproj 실행 -> 프로비저닝 설정후 빌드를 진행합니다.
 
 저같은 경우에는 Linker Error 가 발생했습니다.
